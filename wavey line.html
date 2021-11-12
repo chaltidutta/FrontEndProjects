@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> wavy text</title>
+        <style type="text/css">
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(80, 19, 19);
+        }
+        .wavy{
+            position: relative;
+        }
+        .wavy span{
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            font-size: 2em;
+            text-transform: uppercase;
+            animation: animate 2s ease-in-out infinite;
+            animation-delay: calc(0.1s * var(--i));
+        }
+        @keyframes animate{
+            0%{
+                transform: translateY(0px);
+            }
+            20%{
+                transform: translateY(-20px);
+            }
+            40%,100{
+                transform:translateY(0px);
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="wavy">
+            <span style="--i:1">U</span>
+            <span style="--i:2">P</span>
+            <span style="--i:3">A</span>
+            <span style="--i:4">M</span>
+            <span style="--i:5">A</span>
+            <span style="--i:6"> </span>
+            <span style="--i:7">D</span>
+            <span style="--i:8">U</span>
+            <span style="--i:9">T</span>
+            <span style="--i:10">T</span>
+            <span style="--i:11">A</span>
+            <span style="--i:12">❤️</span>
+            <span style="--i:13">.</span>
+            <span style="--i:14">.</span>
+            <span style="--i:19">.</span>
+            <span style="--i:20">.</span>
+           
+        </div>
+    </body>
+</html>
