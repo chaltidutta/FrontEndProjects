@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="color_testing.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Titillium+Web&display=swap" rel="stylesheet">
+	<style>
+		body{
+                margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;        
+            background-color: #081b2c;
+            font-family:cursive;
+            }
+            h1{
+               color: rgb(197, 247, 81);
+            }
+            .font{
+                font-size: 75px;
+                color: rgb(17, 157, 89);
+                font-family: cursive;
+            }
+            td{
+                color: yellow;
+            }
+            .checkbox{
+               color: yellow;
+            }
+
+	</style>
+
+</head>
+<body>
+
+    <form>
+            <h1 class="font"> <u>Registration Form </u></h1>
+           <h1><b><u>personal details</U></b></h1>
+           <table>
+            
+            <tr>
+                <td><label>Name:</lebel></td>
+                <td><input type="text" name="" placeholder="Name" required></td>
+             </tr>
+             <tr>
+                <td><label> Gurdian name:</lebel></td>
+                <td><input type="text" name="" placeholder="Gurdian's Name" required></td>
+             </tr>
+             <tr>
+                <td><label>Relationship with the  Gurdian</lebel></td>
+                <td><input type="text" name="" placeholder="relationship"></td>
+             </tr>
+             <tr>
+                <td><label>Phone number:</label></td>
+                <td><input type="number" name="" placeholder="Number" title="Phone number must be 10 digits" required></td>
+             </tr>
+             <tr>
+                <td><label>email:</label></td>
+                <td><input type="email" name="" placeholder="xyz@gmail.com"  required></td>
+             <tr>
+                <td><label>password:</label></td>
+                <td><input type="password" name=""  required pattern=".{5,10}" title="Password must be between 5 and 10" placeholder="xyz@0000"></td>
+             </tr>
+             <tr>
+                <td><label>Dob:</label></td>
+                <td><input type="date"name="" required></td>
+              </tr>
+              <tr>
+                 <td>Sex : </td>
+                 <td><div>
+                  <label for="male">Male</label>
+                  <input type="radio" id="male" name="gender" value="male">
+                  <label for="female">Female</label>
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="others">Others</label>
+                  <input type="radio" id="others" name="gender" value="others">
+               </div></td>
+              </tr>
+           </table><hr>
+           <table>
+               <h1><u>Address </u></h1>
+               <tr>
+                  <td><label>Details:</label></td>
+                  <td><input type="text" name="" style="width: 250px; height: 75px;" required></td>
+               </tr>
+           </table><hr>
+           <h1> <u>educational qualification</u></h1>
+           <table>
+               <tr>
+                 <td><label>class</label><br>
+                 <input type="number" value="1,5,10" name="" required></td>
+                 <td><label>marks</label><br>
+                 <input type="numder" name="" required></td>
+                 <td><label>parcentage or CGPA</label><br>
+                 <input type="number" name="" placeholder="without % sign" required></td>
+                 <td><label>year of passing</label><br>
+                 <input type="number"name=""></td>
+               </tr>
+           </table><hr>
+           <h1><u>Upload documents</u></h1>
+           <table>
+            <tr>
+                <td><label>Photo:</label></td>
+                <td><input type="file" name="" required></td>
+             </tr> 
+                <tr>
+                  <td><label>signature:</label></td>
+                  <td><input type="file" name="" required></td>
+               </tr>
+               <tr>
+                <td><label>Last Marksheet:</label></td>
+                <td><input type="file" name=""required></td>
+             </tr>
+             <tr>
+                <td><label>Adhaar Card:</label></td>
+                <td><input type="file" name="" required></td>
+             </tr> <tr>
+                <td><label>Income Certificate:</label></td>
+                <td><input type="file" name="" required></td>
+             </tr>
+           </table><hr>
+           <table>
+            <div class="ckeckbox">
+               <label for="checkbox">I agree to the terms and conditiond</label>
+               <input type="checkbox" id="checkbox" name="Terms and conditions" value="Accepted" required>
+            </div>
+           </table>
+              
+           <input type="submit" name="value ="press here" style="width: 75px; height: 50px;"><br>
+        </form>
+</body>
+</html>
